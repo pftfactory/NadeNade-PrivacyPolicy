@@ -37,7 +37,7 @@ jobs:
             --exclude "_site" \
             ./ _site/
 
-          for page in index.html en/index.html es/index.html; do
+          for page in index.html en/index.html es/index.html pt-BR/index.html; do
             LAST_UPDATED="$(git log -1 --format=%as -- "$page")"
             sed -i "s/__LAST_UPDATED__/${LAST_UPDATED}/g" "_site/$page"
           done
