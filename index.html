@@ -2,114 +2,95 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
         content="なでなで（NadeNade）のプライバシーポリシーです。">
   <meta name="referrer" content="no-referrer">
   <title>プライバシーポリシー | なでなで（NadeNade）</title>
   <style>
-    :root {
-      color-scheme: light dark;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
-                   "Yu Gothic", sans-serif;
-      line-height: 1.85;
-      color: #222;
-      background: #fff;
-    }
-
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
     body {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", YuGothic, Arial, sans-serif;
+      line-height: 1.8;
+      color: #1d1d1f;
+      background: #f5f5f7;
       overflow-wrap: anywhere;
     }
-
-    h1 {
-      font-size: 1.7rem;
-      line-height: 1.5;
-      margin-bottom: 12px;
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: 48px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     }
-
+    h1 { margin: 0 0 8px; font-size: 2rem; line-height: 1.35; }
     h2 {
-      font-size: 1.2rem;
-      margin-top: 36px;
+      margin: 2.5em 0 0.6em;
+      padding-bottom: 0.3em;
+      font-size: 1.25rem;
+      border-bottom: 1px solid #d2d2d7;
     }
-
-    h3 {
-      font-size: 1rem;
-      margin-top: 24px;
+    h3 { margin: 1.6em 0 0.5em; font-size: 1.05rem; }
+    p { margin: 0.8em 0; }
+    ul, ol { padding-left: 1.5em; }
+    li { margin: 0.4em 0; }
+    a { color: #0066cc; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin: 20px 0 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #d2d2d7;
     }
-
-    p, ul {
-      margin: 12px 0;
+    .updated { margin-top: 0; color: #6e6e73; font-size: 0.95rem; }
+    .summary, .note {
+      margin: 1.5em 0;
+      padding: 16px 18px;
+      background: #f5f5f7;
+      border-radius: 10px;
     }
-
-    li {
-      margin-bottom: 8px;
+    .summary h2 { margin-top: 0; }
+    .copyright {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #d2d2d7;
+      text-align: center;
+      color: #6e6e73;
+      font-size: 0.9rem;
     }
-
-    a {
-      color: #005bbb;
-      text-underline-offset: 0.2em;
-    }
-
-    a:focus-visible {
-      outline: 3px solid currentColor;
-      outline-offset: 4px;
-    }
-
-    .meta {
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    .summary {
-      padding: 16px 20px;
-      background: #f4f5f7;
-      border-radius: 12px;
-      margin: 24px 0;
-    }
-
-    footer {
-      border-top: 1px solid #ccc;
-      margin-top: 40px;
-      padding-top: 20px;
-    }
-
     @media (prefers-color-scheme: dark) {
-      :root {
-        color: #eee;
-        background: #181818;
-      }
-
-      .meta {
-        color: #bbb;
-      }
-
-      .summary {
-        background: #282828;
-      }
-
-      a {
-        color: #8ac4ff;
-      }
-
-      footer {
-        border-color: #555;
-      }
+      body { color: #f5f5f7; background: #000000; }
+      main { background: #1c1c1e; box-shadow: none; }
+      h2, nav, .copyright { border-color: #3a3a3c; }
+      .updated, .copyright { color: #aeaeb2; }
+      .summary, .note { background: #2c2c2e; }
+      a { color: #64a8ff; }
+    }
+    @media (max-width: 640px) {
+      main { width: 100%; margin: 0; padding: 28px 20px 40px; border-radius: 0; }
+      h1 { font-size: 1.7rem; }
     }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <h1>プライバシーポリシー</h1>
-      <p>なでなで（NadeNade）</p>
-      <p class="meta">
+      <h1>なでなで プライバシーポリシー</h1>
+      <p class="updated">
         施行日：【施行日】<br>
         最終更新日：【最終更新日】
       </p>
     </header>
+
+    <nav aria-label="関連文書">
+      <a href="https://pftfactory.github.io/NadeNade-EULA/">利用規約</a>
+      <a href="https://www.apple.com/jp/legal/privacy/jp/" target="_blank" rel="noopener noreferrer">Appleプライバシーポリシー</a>
+    </nav>
 
     <p>
       【運営者名】（以下「運営者」）は、
@@ -425,17 +406,19 @@
       </p>
     </section>
 
-    <footer aria-labelledby="contact-heading">
+    <section aria-labelledby="contact-heading">
       <h2 id="contact-heading">12. お問い合わせ先</h2>
-      <p>
-        運営者：【pftFactory】<br>
-        お問い合わせ先：【info@pftfactory.deca.jp】
-      </p>
+      <div class="note">
+        <p><strong>運営者：</strong>【pftFactory】</p>
+        <p><strong>お問い合わせ先：</strong><a href="mailto:info@pftfactory.deca.jp">info@pftfactory.deca.jp</a></p>
+      </div>
       <p>
         本ポリシーおよび情報の取り扱いに関するご質問は、
         上記のお問い合わせ先へご連絡ください。
       </p>
-    </footer>
+    </section>
+
+    <footer class="copyright">&copy; 2026 pftFactory. All rights reserved.</footer>
   </main>
 </body>
 </html>
